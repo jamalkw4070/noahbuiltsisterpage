@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9f6f1;
+  background-color: #d1bfa7; /* light-medium brown */
   color: #2e2b26;
 }
 
@@ -25,11 +25,27 @@ body {
 }
 
 .testimonial-card {
-  background: white;
+  background: #f3e9dc;
   border: 2px solid #3c5e3c;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+}
+
+.testimonial-card.full-width {
+  grid-column: 1 / -1; /* spans entire width */
+  max-width: 100%;
+}
+
+.testimonial-card.price-box {
+  grid-column: 1 / -1;
+  max-width: 100%;
+  background: #e0d2b8;
+  border: 2px solid #5a3e2b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 2rem 1rem;
 }
 
 .media {
