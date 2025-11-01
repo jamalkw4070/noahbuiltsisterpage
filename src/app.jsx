@@ -27,6 +27,7 @@ export default function App() {
       name: "Sizzle Box",
       text: "These remaining boxes are for Sizzles. As we discussed they will be for summarzing the corresponding videos attached to the box."
     },
+    
     {
       type: "video",
       url: "https://www.youtube.com/embed/1JK0-yoNaWo?si=tZ1wckwplJmrfbnv",
@@ -35,8 +36,15 @@ export default function App() {
     },
     {
       type: "price",
-      name: "JOIN TODAY FOR FREE",
-      text: "Register now and get you first class FREE — USE CODE MOVINGUP AT CHECKOUT - down to earth, no pressure, just real guidance."
+  name: "Need more information?",
+  text: "Sign up for our weekly online class where we discuss the course contents and its entails.",
+  link: "https://www.spaceinmyplace.com/" // 🔹 your first button's custom link
+    },
+    {
+     type: "price",
+  name: "Ready to start learning the craft?",
+  text: "Register now below - down to earth, no pressure, just real guidance.",
+  link: "https://square.link/u/fKmrCFXZ?src=embed" // 🔹 second button’s existing link
     }
   ];
 
@@ -67,62 +75,64 @@ export default function App() {
           margin: "40px auto"
         }}
       >
-        {testimonials.map((t, i) => {
-          let extraClass = "";
-          if (t.type === "price") extraClass = "price-box";
-          if (t.type === "overview") extraClass = "overview-box";
+{testimonials.map((t, i) => {
+  let extraClass = "";
+  if (t.type === "price") extraClass = "price-box";
+  if (t.type === "overview") extraClass = "overview-box";
 
-          return (
-            <div
-              key={i}
-              className={`testimonial-card ${extraClass}`}
-              style={{
-                backgroundColor: "#f7f1eb",
-                padding: "20px",
-                borderRadius: "12px",
-                border: "2px solid green",
-                boxShadow: "0px 2px 6px rgba(0,0,0,0.1)"
-              }}
-            >
-              {t.type === "video" && (
-                <iframe
-                  className="media"
-                  width="100%"
-                  height="250"
-                  src={t.url}
-                  title="Testimonial video"
-                  allowFullScreen
-                />
-              )}
-              {t.type === "image" && <img src={t.url} alt={t.name} className="media" />}
-              <h3 style={{ fontFamily: "'Raleway', sans-serif", color: "#000" }}>{t.name}</h3>
-              <p style={{ color: "#000" }}>{t.text}</p>
+  return (
+    <div
+      key={i}
+      className={`testimonial-card ${extraClass}`}
+      style={{
+        backgroundColor: "#f7f1eb",
+        padding: "20px",
+        borderRadius: "12px",
+        border: "2px solid green",
+        boxShadow: "0px 2px 6px rgba(0,0,0,0.1)"
+      }}
+    >
+      {t.type === "video" && (
+        <iframe
+          className="media"
+          width="100%"
+          height="250"
+          src={t.url}
+          title="Testimonial video"
+          allowFullScreen
+        />
+      )}
 
-              {t.type === "price" && (
-  <button
-    style={{
-      marginTop: "15px",
-      padding: "10px 20px",
-      fontFamily: "'Poppins', sans-serif",
-      fontSize: "1rem",
-      background: "transparent",
-      border: "2px solid green",
-      borderRadius: "8px",
-      color: "green",
-      cursor: "pointer",
-      transition: "all 0.2s ease"
-    }}
-    onMouseOver={(e) => (e.target.style.background = "#e0f5e0")}
-    onMouseOut={(e) => (e.target.style.background = "transparent")}
-    onClick={() => window.open("https://square.link/u/fKmrCFXZ?src=embed", "_blank")}
-  >
-    Get Started
-  </button>
-)}
+      {t.type === "image" && <img src={t.url} alt={t.name} className="media" />}
 
-            </div>
-          );
-        })}
+      <h3 style={{ fontFamily: "'Raleway', sans-serif", color: "#000" }}>{t.name}</h3>
+      <p style={{ color: "#000" }}>{t.text}</p>
+
+      {t.type === "price" && (
+        <button
+          style={{
+            marginTop: "15px",
+            padding: "10px 20px",
+            fontFamily: "'Poppins', sans-serif",
+            fontSize: "1rem",
+            background: "transparent",
+            border: "2px solid green",
+            borderRadius: "8px",
+            color: "green",
+            cursor: "pointer",
+            transition: "all 0.2s ease"
+          }}
+          onMouseOver={(e) => (e.target.style.background = "#e0f5e0")}
+          onMouseOut={(e) => (e.target.style.background = "transparent")}
+          onClick={() => window.open(t.link, "_blank")}
+        >
+          Get Started
+        </button>
+      )}
+    </div>
+  );
+})}
+
       </main>
 
       <footer className="footer" style={{ textAlign: "center", marginTop: "40px", padding: "20px 0", color: "#000" }}>
