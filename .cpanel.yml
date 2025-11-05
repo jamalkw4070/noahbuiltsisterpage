@@ -1,17 +1,6 @@
-<<<<<<< HEAD
 ---
 deployment:
   tasks:
-    - npm install
-    - npm run build
     - export DEPLOYPATH=/home/noahbuil/public_html
-    - /bin/cp -R dist/* $DEPLOYPATH
-=======
----
-deployment:
-  tasks:
-    - npm install
-    - npm run build
-    - export DEPLOYPATH=/home/noahbuil/public_html
-    - /bin/cp -R dist/* $DEPLOYPATH
->>>>>>> f956e5d979d7e081ced9e603e0a50276382db802
+    - /bin/cp -R * $DEPLOYPATH
+
