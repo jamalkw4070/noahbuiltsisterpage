@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/noahbuilt/public_html/
+    - export DEPLOYPATH=/home/noahbuil/public_html/
+
     - /bin/cp -R images $DEPLOYPATH
