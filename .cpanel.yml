@@ -1,6 +1,9 @@
 ---
 deployment:
   tasks:
+    - npm install
+    - npm run build
     - export DEPLOYPATH=/home/noahbuil/public_html
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R dist/* $DEPLOYPATH
+
 
