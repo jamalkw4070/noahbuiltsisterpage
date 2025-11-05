@@ -109,26 +109,47 @@ export default function App() {
       <p style={{ color: "#000" }}>{t.text}</p>
 
       {t.type === "price" && (
-        <button
-          style={{
-            marginTop: "15px",
-            padding: "10px 20px",
-            fontFamily: "'Poppins', sans-serif",
-            fontSize: "1rem",
-            background: "transparent",
-            border: "2px solid green",
-            borderRadius: "8px",
-            color: "green",
-            cursor: "pointer",
-            transition: "all 0.2s ease"
-          }}
-          onMouseOver={(e) => (e.target.style.background = "#e0f5e0")}
-          onMouseOut={(e) => (e.target.style.background = "transparent")}
-          onClick={() => window.open(t.link, "_blank")}
-        >
-          Get Started
-        </button>
-      )}
+  <>
+    <button
+      style={{
+        marginTop: "15px",
+        padding: "10px 20px",
+        fontFamily: "'Poppins', sans-serif",
+        fontSize: "1rem",
+        background: "transparent",
+        border: "2px solid green",
+        borderRadius: "8px",
+        color: "green",
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
+      onMouseOver={(e) => (e.target.style.background = "#e0f5e0")}
+      onMouseOut={(e) => (e.target.style.background = "transparent")}
+      onClick={() => window.open(t.link, "_blank")}
+    >
+      Get Started
+    </button>
+
+    {t.link.includes("square.link") && (
+      <p style={{ marginTop: "10px" }}>
+        <a
+  href="/tos.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    color: "green",
+    textDecoration: "underline",
+    fontSize: "0.9rem"
+  }}
+>
+  View Terms & Policies
+</a>
+
+      </p>
+    )}
+  </>
+)}
+
     </div>
   );
 })}
