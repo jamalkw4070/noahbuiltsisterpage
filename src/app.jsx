@@ -29,15 +29,15 @@ export default function App() {
     },
     {
   type: "price",
-  name: "Need more information?",
-  text: "Sign up for our weekly online class where we discuss the course contents and its entails.",
+  name: "Free 30-minute CRA (30 minutes)",
+  text: "Learn The Key Elements & Meet Personal Coaches (Instant access)",
   link: "https://www.spaceinmyplace.com/",
   buttonText: "Learn More"
 },
 {
   type: "price",
-  name: "Ready to start learning the craft?",
-  text: "Register now below - down to earth, no pressure, just real guidance.",
+  name: "GET STARTED NOW!",
+  text: "YES, I have reviewed the terms of service and I’m ready to begin learning how to create a better way forward for me and my loved ones. To be clear, I fully understand that I can opt out at any time. I also  understand that my enrollment comes with NOAH’S 30-DAY 100% IRONCLAD, SATISFACTION GUARANTEE –Meaning, if for any reason I am not 100% delighted with NoahBuilt.com’s Coursework,& Personal Coaching, my entire payment will be promptly refunded with no questions asked.",
   link: "https://square.link/u/fKmrCFXZ?src=embed",
   buttonText: "Get Started"
 }
