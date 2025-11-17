@@ -28,19 +28,19 @@ export default function App() {
       text: "As we introduce our training into the marketplace, our strategy is logical, strategic and constrained. NoahBuilt coursework is only available to a limited number of people in your area and for a limited period of time. We are only looking for people who are a good fit for what we offer. If you are ready to enroll, click Get Started (below). If you are not quite ready, we invite you to learn more by taking our 30 minute FREE CRASH COURSE (below)."
     },
     {
-      type: "price",
+  type: "price",
   name: "Need more information?",
   text: "Sign up for our weekly online class where we discuss the course contents and its entails.",
-  link: "https://www.spaceinmyplace.com/" // 🔹 your first button's custom link
-  buttonText: "Learn More"    
-    },
-    {
-     type: "price",
-  name: " GET STARTED NOW!",
-  text: "YES, I have reviewed the terms of service and I’m ready to begin learning how to create a better way forward for me and my loved ones. To be clear, I fully understand that I can opt out at any time. I also  understand that my enrollment comes with NOAH’S 30-DAY 100% IRONCLAD, SATISFACTION GUARANTEE –Meaning, if for any reason I am not 100% delighted with NoahBuilt.com’s Coursework,& Personal Coaching, my entire payment will be promptly refunded with no questions asked.",
-  link: "https://square.link/u/fKmrCFXZ?src=embed" // 🔹 second button’s existing link
-  buttonText: "Get Started"    
-    }
+  link: "https://www.spaceinmyplace.com/",
+  buttonText: "Learn More"
+},
+{
+  type: "price",
+  name: "Ready to start learning the craft?",
+  text: "Register now below - down to earth, no pressure, just real guidance.",
+  link: "https://square.link/u/fKmrCFXZ?src=embed",
+  buttonText: "Get Started"
+}
   ];
 
   return (
