@@ -6,45 +6,40 @@ export default function App() {
 {
       type: "video",
       url: "https://www.youtube.com/embed/foAQNOcP_Oo?si=rkjWuCggp3fCOhow",
-      name: "Noah Built Overview Statement  Box",
-      text: "This box is for giving powerful summary statements and telling what Noah Built is all about. Ive attached a place holder video. Note that all videos are interchangable simply by changing the embedded link in the code. When it is time to add the proper promotional/sizzle videos, they must be uploaded to youtube, and I will add them."
+      name: "A BETTER WAY FORWARD",
+      text: "If you are seeking a better way forward and you sincerely want to learn how to take control of your financial future. You are now at the right place at the right time. The NoahBuilt team provides you with everything you need to create your own powerful cash-flow(s) that can be a huge benefit to you and your family for many years to come."
     },
     {
       type: "video",
       url: "https://www.youtube.com/embed/1R_AiGcUSMM?si=874hgyp8wJnA79TJ",
-      name: "Sizzle Box",
-      text: "These remaining boxes are for Sizzles. As we discussed they will be for summarzing the corresponding videos attached to the box. "
+      name: "FACTS VS FICTION",
+      text: "Your financial future is 100% YOUR RESPONSIBILITY, REAL ESTATE is proven to be the most powerful wealth builder in recorded history, Residential Real Estate is the Simplist & Fasted way for average individuals/ families to start taking control. Everyone is already involved in Real Estate in some way. Noah Built coursework shows you exactly how to begin moving from paying rent or mortgage to creating your own monthly CASH FLOW."
     },
         {
       type: "video",
       url: "https://www.youtube.com/embed/RE08EFwKyLA?si=fvESHZko9UN8bHi9",
-      name: "Sizzle Box",
-      text: "These remaining boxes are for Sizzles. As we discussed they will be for summarzing the corresponding videos attached to the box."
+      name: "EVERY FAMILY HAS AT LEAST ‘ONE’",
+      text: "You are here because you already understand that life is uncertain, however you also understand that there are always great opportunities for people who are willing to learn better ways and apply best practices. At NoahBuilt, we believe that every family/community has at least one ‘special’ or uniquely gifted individual who can embrace what we are offering. By doing so, take a leadership role, and help create a better future for themselves, their family, and the people they care about. Right now you should ask yourself one simple question: ARE YOU THE ONE, if not then who in your family is that “special person”."
     },
     {
       type: "video",
       url: "https://www.youtube.com/embed/k1XFWNT7pAM?si=OuguqA0mF3xIFm31",
-      name: "Sizzle Box",
-      text: "These remaining boxes are for Sizzles. As we discussed they will be for summarzing the corresponding videos attached to the box."
-    },
-    
-    {
-      type: "video",
-      url: "https://www.youtube.com/embed/1JK0-yoNaWo?si=tZ1wckwplJmrfbnv",
-      name: "Sizzle Box",
-      text: "These remaining boxes are for Sizzles. As we discussed they will be for summarzing the corresponding videos attached to the box."
+      name: "ABOUT OUR INTRODUCTORY OFFER",
+      text: "As we introduce our training into the marketplace, our strategy is logical, strategic and constrained. NoahBuilt coursework is only available to a limited number of people in your area and for a limited period of time. We are only looking for people who are a good fit for what we offer. If you are ready to enroll, click Get Started (below). If you are not quite ready, we invite you to learn more by taking our 30 minute FREE CRASH COURSE (below)."
     },
     {
       type: "price",
   name: "Need more information?",
   text: "Sign up for our weekly online class where we discuss the course contents and its entails.",
   link: "https://www.spaceinmyplace.com/" // 🔹 your first button's custom link
+  buttonText: "Learn More"    
     },
     {
      type: "price",
-  name: "Ready to start learning the craft?",
-  text: "Register now below - down to earth, no pressure, just real guidance.",
+  name: " GET STARTED NOW!",
+  text: "YES, I have reviewed the terms of service and I’m ready to begin learning how to create a better way forward for me and my loved ones. To be clear, I fully understand that I can opt out at any time. I also  understand that my enrollment comes with NOAH’S 30-DAY 100% IRONCLAD, SATISFACTION GUARANTEE –Meaning, if for any reason I am not 100% delighted with NoahBuilt.com’s Coursework,& Personal Coaching, my entire payment will be promptly refunded with no questions asked.",
   link: "https://square.link/u/fKmrCFXZ?src=embed" // 🔹 second button’s existing link
+  buttonText: "Get Started"    
     }
   ];
 
@@ -59,9 +54,9 @@ export default function App() {
       }}
     >
       <header className="header" style={{ textAlign: "center", paddingTop: "20px" }}>
-        <h1 style={{ fontFamily: "'Playfair Display', serif" }}>Noah Built: Proof in Practice</h1>
+        <h1 style={{ fontFamily: "'Playfair Display', serif" }}>NoahBuilt.com</h1>
         <p className="subtitle" style={{ fontFamily: "'Poppins', sans-serif" }}>
-          Down to earth. Humble. Real work.
+          CASH-FLOW COURSEWORK
         </p>
       </header>
 
@@ -111,24 +106,25 @@ export default function App() {
       {t.type === "price" && (
   <>
     <button
-      style={{
-        marginTop: "15px",
-        padding: "10px 20px",
-        fontFamily: "'Poppins', sans-serif",
-        fontSize: "1rem",
-        background: "transparent",
-        border: "2px solid green",
-        borderRadius: "8px",
-        color: "green",
-        cursor: "pointer",
-        transition: "all 0.2s ease"
-      }}
-      onMouseOver={(e) => (e.target.style.background = "#e0f5e0")}
-      onMouseOut={(e) => (e.target.style.background = "transparent")}
-      onClick={() => window.open(t.link, "_blank")}
-    >
-      Get Started
-    </button>
+  style={{
+    marginTop: "15px",
+    padding: "10px 20px",
+    fontFamily: "'Poppins', sans-serif",
+    fontSize: "1rem",
+    background: "transparent",
+    border: "2px solid green",
+    borderRadius: "8px",
+    color: "green",
+    cursor: "pointer",
+    transition: "all 0.2s ease"
+  }}
+  onMouseOver={(e) => (e.target.style.background = "#e0f5e0")}
+  onMouseOut={(e) => (e.target.style.background = "transparent")}
+  onClick={() => window.open(t.link, "_blank")}
+>
+  {t.buttonText ?? "Get Started"}
+</button>
+
 
     {t.link.includes("square.link") && (
       <p style={{ marginTop: "10px" }}>
