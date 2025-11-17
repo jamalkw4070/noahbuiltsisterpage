@@ -11,7 +11,7 @@ export default function App() {
     },
     {
       type: "video",
-      url: "https://www.youtube.com/embed/1R_AiGcUSMM?si=874hgyp8wJnA79TJ",
+      url: "https://www.youtube.com/embed/7D-Kzw61h2U?si=pdMZb61fynPis-b4",
       name: "FACTS VS FICTION",
       text: "Your financial future is 100% YOUR RESPONSIBILITY, REAL ESTATE is proven to be the most powerful wealth builder in recorded history, Residential Real Estate is the Simplist & Fasted way for average individuals/ families to start taking control. Everyone is already involved in Real Estate in some way. Noah Built coursework shows you exactly how to begin moving from paying rent or mortgage to creating your own monthly CASH FLOW."
     },
