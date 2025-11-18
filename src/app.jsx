@@ -29,7 +29,7 @@ export default function App() {
     },
     {
   type: "price",
-  name: "Free 30-minute CRA (30 minutes)",
+  name: "FREE CRASH COURSE (30 minutes)",
   text: "Learn The Key Elements & Meet Personal Coaches (Instant access)",
   link: "https://www.spaceinmyplace.com/",
   buttonText: "Learn More"
