@@ -5,7 +5,7 @@ export default function App() {
   const testimonials = [
 {
       type: "video",
-      url: "https://www.youtube.com/embed/foAQNOcP_Oo?si=rkjWuCggp3fCOhow",
+      url: "https://www.youtube.com/embed/RCoROxb8w_w?si=xY_09EohruutE9Jr",
       name: "A BETTER WAY FORWARD",
       text: "If you are seeking a better way forward and you sincerely want to learn how to take control of your financial future. You are now at the right place at the right time. The NoahBuilt team provides you with everything you need to create your own powerful cash-flow(s) that can be a huge benefit to you and your family for many years to come."
     },
@@ -17,20 +17,20 @@ export default function App() {
     },
         {
       type: "video",
-      url: "https://www.youtube.com/embed/RE08EFwKyLA?si=fvESHZko9UN8bHi9",
+      url: "https://www.youtube.com/embed/gRKxZzmpC5s?si=N8iD2tYw_lqFULIH",
       name: "EVERY FAMILY HAS AT LEAST ‘ONE’",
       text: "You are here because you already understand that life is uncertain, however you also understand that there are always great opportunities for people who are willing to learn better ways and apply best practices. At NoahBuilt, we believe that every family/community has at least one ‘special’ or uniquely gifted individual who can embrace what we are offering. By doing so, take a leadership role, and help create a better future for themselves, their family, and the people they care about. Right now you should ask yourself one simple question: ARE YOU THE ONE, if not then who in your family is that “special person”."
     },
     {
       type: "video",
-      url: "https://www.youtube.com/embed/k1XFWNT7pAM?si=OuguqA0mF3xIFm31",
+      url: "https://www.youtube.com/embed/hPS79eldvyI?si=7MBQKi8bSis3nOt_",
       name: "ABOUT OUR INTRODUCTORY OFFER",
       text: "As we introduce our training into the marketplace, our strategy is logical, strategic and constrained. NoahBuilt coursework is only available to a limited number of people in your area and for a limited period of time. We are only looking for people who are a good fit for what we offer. If you are ready to enroll, click Get Started (below). If you are not quite ready, we invite you to learn more by taking our 30 minute FREE CRASH COURSE (below)."
     },
     {
   type: "price",
-  name: "FREE CRASH COURSE (30 minutes)",
-  text: "Learn The Key Elements & Meet Personal Coaches (Instant access)",
+  name: "FREE CRASH COURSE \n(30 minutes)",
+  text: "Learn The Key Elements & Meet Personal Coaches \n(Instant access)",
   link: "https://www.spaceinmyplace.com/",
   buttonText: "Learn More"
 },
@@ -55,10 +55,41 @@ export default function App() {
     >
       <header className="header" style={{ textAlign: "center", paddingTop: "20px" }}>
         <h1 style={{ fontFamily: "'Playfair Display', serif" }}>NoahBuilt.com</h1>
-        <p className="subtitle" style={{ fontFamily: "'Poppins', sans-serif" }}>
-          CASH-FLOW COURSEWORK
-        </p>
+        <p
+  className="subtitle"
+  style={{
+    fontFamily: "'Poppins', sans-serif",
+    whiteSpace: "pre-line"
+  }}
+>
+  CASH-FLOW{"\n"}
+  COURSEWORK
+</p>
+
       </header>
+<img 
+  src="/creditcards.jpeg" 
+  alt="Logo" 
+  style={{
+    position: "absolute",
+    top: "20px",
+    left: "20px",
+    width: "80px",
+    height: "auto"
+  }}
+/>
+<img
+  src="homelogo.jpeg"
+  alt="Top Right Image"
+  style={{
+    position: "absolute",
+    top: "20px",
+    right: "20px",
+    width: "80px",
+    height: "auto",
+    zIndex: 10
+  }}
+/>
 
       <main
         className="testimonials"
@@ -100,8 +131,20 @@ export default function App() {
 
       {t.type === "image" && <img src={t.url} alt={t.name} className="media" />}
 
-      <h3 style={{ fontFamily: "'Raleway', sans-serif", color: "#000" }}>{t.name}</h3>
-      <p style={{ color: "#000" }}>{t.text}</p>
+      <h3
+  style={{
+    fontFamily: "'Raleway', sans-serif",
+    whiteSpace: "pre-line",
+    color: "#000"
+  }}
+>
+  {t.name}
+</h3>
+
+<p style={{ whiteSpace: "pre-line", color: "#000" }}>
+  {t.text}
+</p>
+
 
       {t.type === "price" && (
   <>
@@ -151,6 +194,13 @@ export default function App() {
 })}
 
       </main>
+<div style={{ textAlign: "center", marginTop: "40px", marginBottom: "20px" }}>
+  <img 
+    src="/creditcards.jpeg"
+    alt="Second Logo"
+    style={{ width: "120px", height: "auto" }}
+  />
+</div>
 
       <footer className="footer" style={{ textAlign: "center", marginTop: "40px", padding: "20px 0", color: "#000" }}>
         <p>© {new Date().getFullYear()} Noah Built / Space In My Place</p>
