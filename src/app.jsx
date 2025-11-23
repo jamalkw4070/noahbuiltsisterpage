@@ -54,42 +54,29 @@ export default function App() {
       }}
     >
       <header className="header" style={{ textAlign: "center", paddingTop: "20px" }}>
-        <h1 style={{ fontFamily: "'Playfair Display', serif" }}>NoahBuilt.com</h1>
-        <p
-  className="subtitle"
-  style={{
-    fontFamily: "'Poppins', sans-serif",
-    whiteSpace: "pre-line"
-  }}
->
-  CASH-FLOW{"\n"}
-  COURSEWORK
-</p>
+  <h1 style={{ fontFamily: "'Playfair Display', serif" }}>NoahBuilt.com</h1>
 
-      </header>
-<img 
-  src="/creditcards.jpeg" 
-  alt="Logo" 
-  style={{
-    position: "absolute",
-    top: "90px",
-    left: "20px",
-    width: "80px",
-    height: "auto"
-  }}
-/>
-<img
-  src="homelogo.jpeg"
-  alt="Top Right Image"
-  style={{
-    position: "absolute",
-    top: "90px",
-    right: "20px",
-    width: "80px",
-    height: "auto",
-    zIndex: 10
-  }}
-/>
+  <img
+    src="homelogo.png"
+    alt="Logo"
+    style={{
+      width: "70px",
+      height: "auto",
+      margin: "10px auto"
+    }}
+  />
+
+  <p
+    className="subtitle"
+    style={{
+      fontFamily: "'Poppins', sans-serif",
+      whiteSpace: "pre-line"
+    }}
+  >
+    CASH-FLOW COURSEWORK
+  </p>
+</header>
+
 
       <main
         className="testimonials"
