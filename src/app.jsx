@@ -72,7 +72,7 @@ export default function App() {
   alt="Logo" 
   style={{
     position: "absolute",
-    top: "20px",
+    top: "60px",
     left: "20px",
     width: "80px",
     height: "auto"
@@ -83,7 +83,7 @@ export default function App() {
   alt="Top Right Image"
   style={{
     position: "absolute",
-    top: "20px",
+    top: "60px",
     right: "20px",
     width: "80px",
     height: "auto",
