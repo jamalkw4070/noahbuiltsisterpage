@@ -57,7 +57,7 @@ export default function App() {
   <h1
   style={{
     fontFamily: "'Playfair Display', serif",
-    fontSize: "2.5rem",   // ← make bigger here
+    fontSize: "3.15rem",   // ← make bigger here
     fontWeight: "700"
   }}
 >
