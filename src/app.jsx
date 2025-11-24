@@ -23,7 +23,7 @@ export default function App() {
     },
     {
       type: "video",
-      url: "https://www.youtube.com/embed/hPS79eldvyI?si=7MBQKi8bSis3nOt_",
+      url: "https://www.youtube.com/embed/Y548UNEiy9Q?si=VmT7CJ2gRHU9Z-T7",
       name: "ABOUT OUR INTRODUCTORY OFFER",
       text: "As we introduce our training into the marketplace, our strategy is logical, strategic and constrained. NoahBuilt coursework is only available to a limited number of people in your area and for a limited period of time. We are only looking for people who are a good fit for what we offer. If you are ready to enroll, click Get Started (below). If you are not quite ready, we invite you to learn more by taking our 30 minute FREE CRASH COURSE (below)."
     },
@@ -31,14 +31,14 @@ export default function App() {
   type: "price",
   name: "FREE CRASH COURSE \n(30 minutes)",
   text: "Learn The Key Elements & Meet Personal Coaches \n(Instant access)",
-  link: "https://www.spaceinmyplace.com/",
+  link: "https://www.spaceinmyplace.com/coursework",
   buttonText: "Learn More"
 },
 {
   type: "price",
   name: "GET STARTED NOW!",
   text: "YES, I have reviewed the terms of service and I’m ready to begin learning how to create a better way forward for me and my loved ones. To be clear, I fully understand that I can opt out at any time. I also  understand that my enrollment comes with NOAH’S 30-DAY 100% IRONCLAD, SATISFACTION GUARANTEE –Meaning, if for any reason I am not 100% delighted with NoahBuilt.com’s Coursework,& Personal Coaching, my entire payment will be promptly refunded with no questions asked.",
-  link: "https://square.link/u/fKmrCFXZ?src=embed",
+  link: "https://square.link/u/5mJdJo1h",
   buttonText: "Get Started"
 }
   ];
@@ -54,7 +54,16 @@ export default function App() {
       }}
     >
       <header className="header" style={{ textAlign: "center", paddingTop: "20px" }}>
-  <h1 style={{ fontFamily: "'Playfair Display', serif" }}>NoahBuilt.com</h1>
+  <h1
+  style={{
+    fontFamily: "'Playfair Display', serif",
+    fontSize: "5rem",   // ← make bigger here
+    fontWeight: "700"
+  }}
+>
+  NoahBuilt.com
+</h1>
+
 
   <img
     src="homelogo.png"
