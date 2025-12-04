@@ -28,10 +28,10 @@ export default function App() {
       text: "As we introduce our training into the marketplace, our strategy is logical, strategic and constrained. NoahBuilt coursework is only available to a limited number of people in your area and for a limited period of time. We are only looking for people who are a good fit for what we offer. If you are ready to enroll, click Get Started (below). If you are not quite ready, we invite you to learn more by taking our 30 minute FREE CRASH COURSE (below)."
     },
     {
-  type: "price",
+   type: "price",
   name: "FREE CRASH COURSE \n(30 minutes)",
   text: "Learn The Key Elements & Meet Personal Coaches \n(Instant access)",
-  link: "https://www.spaceinmyplace.com/coursework",
+  link: "/crashcourse",
   buttonText: "Learn More"
 },
 {
